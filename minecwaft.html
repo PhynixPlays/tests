@@ -1173,7 +1173,7 @@ function MineKhan() {
 	}
 	let place
 	let inventory = {
-		hotbar: [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ],
+		hotbar: [ 22, 23, 24, 25, 26, 27, 4, 8, 75 ],
 		main: [],
 		hotbarSlot: 0,
 		size: 40 * Math.min(width, height) / 600,
@@ -5470,7 +5470,7 @@ function MineKhan() {
 			world.tick()
 
 			let progress = Math.round(100 * sub / maxLoad)
-			dirt()
+			diamondBlock()
 			fill(255)
 			textSize(30)
 			ctx.textAlign = "center"
