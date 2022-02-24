@@ -4906,6 +4906,12 @@ function MineKhan() {
 				releasePointer()
 				freezeFrame = true
 			}
+			
+			if (k === "r") {
+				inventory.hotbarSlot = 4
+				holding = inventory.hotbar[inventory.hotbarSlot]
+				updateHUD = true
+			}
 
 			if(Number(k)) {
 				inventory.hotbarSlot = Number(k) - 1
