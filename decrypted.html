@@ -507,10 +507,9 @@ function MineKhan() {
 		{ name: "polishedDiorite" },
 		{ name: "granite" },
 		{ name: "polishedGranite" },
-		// { // I swear, if y'all don't stop asking about TNT every 5 minutes!
-		// 	 name: "tnt",
-		// 	 textures: ["tntBottom", "tntTop", "tntSides"]
-		// },
+		{ name: "tnt",
+		 	 textures: ["tntBottom", "tntTop", "tntSides"]
+		},
 	]
 	const BLOCK_COUNT = blockData.length;
 
@@ -4905,6 +4904,12 @@ function MineKhan() {
 			if (k === ";") {
 				releasePointer()
 				freezeFrame = true
+			}
+			
+			holding = inventory.hotbar[inventory.hotbarSlot] 
+			if (k === "," && holding) {
+				place = true 
+				updateHUD = true
 			}
 			
 			if (k === "1") {
