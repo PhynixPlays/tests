@@ -4876,7 +4876,7 @@ function MineKhan() {
 				}
 			}
 
-			if (k === "z") {
+			if (k === "5") {
 				p.FOV(10, 300)
 			}
 
@@ -4907,14 +4907,56 @@ function MineKhan() {
 				freezeFrame = true
 			}
 			
+			if (k === "1") {
+				inventory.hotbarSlot = 0
+				holding = inventory.hotbar[inventory.hotbarSlot]
+				updateHUD = true
+			}
+			
+			if (k === "2") {
+				inventory.hotbarSlot = 1
+				holding = inventory.hotbar[inventory.hotbarSlot]
+				updateHUD = true
+			}
+			
+			if (k === "3") {
+				inventory.hotbarSlot = 2
+				holding = inventory.hotbar[inventory.hotbarSlot]
+				updateHUD = true
+			}
+			
 			if (k === "r") {
 				inventory.hotbarSlot = 3
 				holding = inventory.hotbar[inventory.hotbarSlot]
 				updateHUD = true
 			}
-
-			if(Number(k)) {
-				inventory.hotbarSlot = Number(k) - 1
+			
+			if (k === "f") {
+				inventory.hotbarSlot = 4
+				holding = inventory.hotbar[inventory.hotbarSlot]
+				updateHUD = true
+			}
+			
+			if (k === "x") {
+				inventory.hotbarSlot = 5
+				holding = inventory.hotbar[inventory.hotbarSlot]
+				updateHUD = true
+			}
+			
+			if (k === "c") {
+				inventory.hotbarSlot = 6
+				holding = inventory.hotbar[inventory.hotbarSlot]
+				updateHUD = true
+			}
+			
+			if (k === "z") {
+				inventory.hotbarSlot = 7
+				holding = inventory.hotbar[inventory.hotbarSlot]
+				updateHUD = true
+			}
+			
+			if (k === "v") {
+				inventory.hotbarSlot = 8
 				holding = inventory.hotbar[inventory.hotbarSlot]
 				updateHUD = true
 			}
