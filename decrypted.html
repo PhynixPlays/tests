@@ -4910,6 +4910,10 @@ function MineKhan() {
 			if (k === "," && holding) {
 				place = true 
 				updateHUD = true
+				}
+				if(place) {
+					newWorldBlock()
+				}
 			}
 			
 			if (k === "1") {
