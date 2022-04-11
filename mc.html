@@ -4811,6 +4811,10 @@ function MineKhan() {
 				holding = inventory.hotbar[inventory.hotbarSlot]
 				if(e.button === 2 && holding) {
 					place = true
+				canvas.onkeydown = function(e) {
+					let k = e.key.toLowerCase()
+					if (k === "r" && holding) {
+						place = true 
 				}
 				if(place) {
 					newWorldBlock()
